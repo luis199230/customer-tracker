@@ -1,0 +1,66 @@
+<form name="updateCustomerForm" data-ng-submit="updateCustomer()">
+
+	<div class="col-md-6">
+		
+		<div class="header">
+			<h2>Contact Info:</h2>
+		</div><br>
+	
+		<div class="input-group">
+			<span class="input-group-addon">First Name</span>
+			<input class="form-control" type="text" data-ng-model="updatedCustomer.firstName" placeholder="{{selectedCustomer.firstName}}">
+		</div><br><br>
+		
+		<div class="input-group">
+			<span class="input-group-addon">Last Name</span>
+			<input class="form-control" data-ng-model="updatedCustomer.lastName" placeholder="{{selectedCustomer.lastName}}">
+		</div><br><br>
+		
+		<div class="input-group">
+			<span class="input-group-addon">Email</span>
+			<input class="form-control" type="email" name="email" data-ng-model="updatedCustomer.email" placeholder="{{selectedCustomer.email}}">
+		</div>
+		<span class="form-error-msg" data-ng-show="updateCustomerForm.$error.email">Email is invalid</span><br><br>
+		
+		<div class="input-group">
+			<span class="input-group-addon">Phone Number</span>
+			<input class="form-control" type="text" data-ng-model="updatedCustomer.telephone" placeholder="{{selectedCustomer.telephone}}">
+		</div>
+	</div>
+		
+	
+	
+	<div class="col-md-6">
+	
+		<div class="header">
+			<h2>Address:</h2>
+		</div><br>
+	
+		<div class="input-group">
+			<span class="input-group-addon">Street</span>
+			<input class="form-control" type="text" data-ng-model="updatedCustomer.street" placeholder="{{selectedCustomer.address.street}}">
+		</div><br><br>
+		
+		<div class="input-group">
+			<span class="input-group-addon">City</span>
+			<input class="form-control" type="text" data-ng-model="updatedCustomer.city" placeholder="{{selectedCustomer.address.city}}">
+		</div><br><br>
+		
+		<div class="input-group">
+			<span class="input-group-addon">State</span>
+			<input class="form-control" type="text" data-ng-model="updatedCustomer.state" placeholder="{{selectedCustomer.address.state}}">
+		</div><br><br>
+		
+		<div class="input-group">
+			<span class="input-group-addon">Zip</span>
+			<input class="form-control" type="text" data-ng-model="updatedCustomer.zip" placeholder="{{selectedCustomer.address.zip}}">
+		</div>
+	</div>
+		
+
+	<div class="addcustomer-btns btn-group">
+		<button class="btn btn-primary" type="submit">Update Customer</button>
+		<button class="btn btn-default" type="reset">Clear</button>
+	</div>
+	
+</form>

@@ -1,0 +1,53 @@
+<div class="header">
+	<h2>{{ selectedCustomer.firstName }} {{ selectedCustomer.lastName }}</h2>
+</div><br>
+
+<ul class="list-group col-md-6">
+
+	
+	<li class="list-group-item">
+		<span class="list-item-addon">First Name</span> 
+		<span class="listview-info">{{ selectedCustomer.firstName }}</span>
+	</li>
+	
+	<li class="list-group-item">
+		<span class="list-item-addon">Last Name</span> 
+		<span class="listview-info">{{ selectedCustomer.lastName }} </span>
+	</li>
+	
+	<li class="list-group-item">
+		<span class="list-item-addon">Email</span> 
+		<span class="listview-info">{{ selectedCustomer.email }} </span>
+	</li>
+	
+	<li class="list-group-item">
+		<span class="list-item-addon">Phone Number</span> 
+		<span class="listview-info">{{ selectedCustomer.telephone }} </span>
+	</li>
+	
+</ul>
+
+
+<ul class="list-group col-md-6">
+
+	<li class="list-group-item">
+		<span class="list-item-addon">Street</span> 
+		<span class="listview-info">{{ selectedCustomer.address.street }} </span>
+	</li>
+	
+	<li class="list-group-item">
+		<span class="list-item-addon">City</span> 
+		<span class="listview-info">{{ selectedCustomer.address.city }} </span>
+	</li>
+	
+	<li class="list-group-item">
+		<span class="list-item-addon">State</span> 
+		<span class="listview-info">{{ selectedCustomer.address.state }} </span>
+	</li>
+	
+	<li class="list-group-item">
+		<span class="list-item-addon">Zip Code</span> 
+		<span class="listview-info">{{ selectedCustomer.address.zip }} </span>
+	</li>
+	
+</ul>
