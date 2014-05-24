@@ -1,3 +1,12 @@
+Background
+----------
+
+This was a test project for a prospective employer. The test was:
+
+"Using AngularJS please create a single page web application that allows a user to Create, List, Update and Delete customers.  A customer is made of up the following attributes: Name, Email, Telephone, Address (Street, City, State, Zip). The web application should use .json files as the storage mechanism for each customer record."
+
+I completed the task in about 6 days including learning AngularJS, Twitter Bootstrap, and the org.json Java library for the first time. It is meant primarily as sample code for future prospective employers.
+
 View Customer Contact Data
 --------------------------
 ![alt tag](http://i1282.photobucket.com/albums/a532/kking50/CustomerTrackerList_zps15e40496.png)
@@ -22,7 +31,7 @@ Responsive & Mobile Design
 Configuration
 -------------
 
-This app requires a Servlet container to run; I tested with Tomcat 7.
+A Servlet container to run this app; I tested with Tomcat 7.
 
 You must specify the absolute path to the directory where you want to store the '.json' files.
 This simply requires changing databasePath (line 21) in src/com/kking50/customertracker/JSONUtility.java.
@@ -31,12 +40,3 @@ This simply requires changing databasePath (line 21) in src/com/kking50/customer
 		private static final String databasePath = "/Users/Kevin/workspace/CustomerTrackerApp/WebContent/database/";
 		
 Then everything should be good to go. Please let me know if there are any issues.
-
-Background
-----------
-
-This was a test project for a prospective employer. The test was:
-
-"Using AngularJS please create a single page web application that allows a user to Create, List, Update and Delete customers.  A customer is made of up the following attributes: Name, Email, Telephone, Address (Street, City, State, Zip). The web application should use .json files as the storage mechanism for each customer record."
-
-I completed the task in about 6 days including learning AngularJS, Twitter Bootstrap, and the org.json Java library for the first time. It is meant primarily as sample code for future prospective employers.
