@@ -1,4 +1,17 @@
-Configuration:
+View Customer Contact Data
+--------------------------
+![alt tag](http://i1282.photobucket.com/albums/a532/kking50/CustomerTrackerList_zps15e40496.png)
+
+Update Information Dynamically
+------------------------------
+![alt tag](http://i1282.photobucket.com/albums/a532/kking50/CustomerTrackerUpdate_zps6666b100.png)
+
+Add and Delete on the Fly
+-------------------------
+![alt tag](http://i1282.photobucket.com/albums/a532/kking50/CustomerTrackerAdd_zps216fafea.png)
+
+Configuration
+-------------
 
 This app requires a Servlet container to run; I tested with Tomcat 7.
 
