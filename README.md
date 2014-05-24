@@ -1,6 +1,6 @@
 Live App Demo on Openshift
 --------------------------
-http://customertracker-kevinking.rhcloud.com/#/
+http://customertracker-kevinking.rhcloud.com
 
 Background
 ----------
