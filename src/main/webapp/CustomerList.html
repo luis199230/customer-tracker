@@ -1,0 +1,11 @@
+<div class="list-group" data-ng-controller="CustomerListController">
+
+	<a href="#/infoCustomer" class="customerlist-item list-group-item"
+		data-ng-repeat="customer in customers | filter: name | orderBy: 'lastName'"
+		data-ng-click="displayCustomer(customer)">
+
+		<strong>{{ customer.lastName }}</strong>, {{ customer.firstName }}
+		
+	</a>
+	<!-- {{ (customers | filter: name).length }} {{ customers.length }} -->
+</div>
